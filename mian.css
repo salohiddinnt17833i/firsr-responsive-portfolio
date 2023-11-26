@@ -1,0 +1,176 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #121312;
+    font-family: sans-serif;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.header .logo
+{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.4s ease;
+}
+.header .logo:hover
+{
+    color: darkorange;
+}
+.header ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+.header ul li a
+{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+.header ul li a:hover
+{
+    color: darkorange;
+}
+
+.header input
+{
+    display: none;
+}
+.header label i
+{
+    font-size: 33px;
+    color: white;
+    display: none;
+}
+
+
+/* main styles */
+
+.main
+{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.main h1
+{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.main h1 span
+{
+    color: darkorange;
+}
+.main h3
+{
+    color: white;
+    font-size: 25px;
+}
+.main p
+{
+    color: #ccc;
+    margin-top: 20px;
+}
+.main button
+{
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
+    border: 1px solid transparent;
+    background-color: darkorange;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    color: white;
+    font-size: 20px;
+}
+.main button i
+{
+    transition: all 0.5s ease;
+}
+.main button:hover
+{
+    transform: translateX(5%);
+    color: #ccc;
+}.main button:hover > i
+{
+    transform: translateY(-20%);
+}
+
+
+@media screen and (max-width:900px) {
+    .header ul
+    {
+        flex-direction: column;
+        padding: ;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: #121312;
+        border-radius: 0px 10px 10px 0px;
+        transition: all 1s ease;
+    }
+    .header ul li
+    {
+        margin-top: 30px;
+    }
+    .header label i
+    {
+        display: block;
+    }
+    #check:checked + ul
+    {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header .logo
+    {
+        font-size: 20px;
+    }
+    .header label i
+    {
+        font-size: 20px;
+    }
+    .main h1
+    {
+        font-size: 25px;
+    }
+    .main h3
+    {
+        font-size: 20px;
+    }
+}
+
+
+
