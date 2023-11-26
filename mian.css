@@ -121,6 +121,67 @@ body {
     transform: translateY(-20%);
 }
 
+/* Skills styles */
+
+.skills
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
+.skills .description
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.skills .description img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.skills .description h3
+{
+    color: #fff;
+}
+.skills .description h4
+{
+    color: #ccc;
+    font-size: 15px;
+    margin-top: 7px;
+    opacity: 0.7;
+}
+.skills .description__item
+{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills .description__item .item a
+{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: lightblue;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid #1f2026;
+    transition: all 0.5s ease;
+}
+.skills .description__item .item a:hover
+{
+    transform: translateX(10%);
+}
 
 @media screen and (max-width:900px) {
     .header ul {
@@ -168,6 +229,11 @@ body {
     {
         color: darkorange;
     }
+    .skills .description__item
+    {
+        flex-wrap: wrap;
+    }
+    
 }
 
 @media screen and (max-width: 320px) {
@@ -190,5 +256,6 @@ body {
     .main h3 {
         font-size: 20px;
     }
+    
 
 }
