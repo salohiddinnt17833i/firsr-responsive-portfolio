@@ -1,58 +1,56 @@
-*
-{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     background-color: #121312;
     font-family: sans-serif;
 }
-.header
-{
+
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
 }
-.header .logo
-{
+
+.header .logo {
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
     color: white;
     transition: all 0.4s ease;
 }
-.header .logo:hover
-{
+
+.header .logo:hover {
     color: darkorange;
 }
-.header ul
-{
+
+.header ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 40px;
 }
-.header ul li a
-{
+
+.header ul li a {
     text-decoration: none;
     color: white;
     transition: all 0.4s ease;
 }
-.header ul li a:hover
-{
+
+.header ul li a:hover {
     color: darkorange;
 }
 
-.header input
-{
+.header input {
     display: none;
 }
-.header label i
-{
+
+.header label i {
     font-size: 33px;
     color: white;
     display: none;
@@ -61,8 +59,7 @@ body
 
 /* main styles */
 
-.main
-{
+.main {
     max-width: 600px;
     width: 100%;
     display: flex;
@@ -74,34 +71,34 @@ body
     margin-right: auto;
     padding: 30px;
 }
-.main h1
-{
+
+.main h1 {
     color: white;
     font-size: 40px;
     margin-bottom: 20px;
 }
-.main h1 span
-{
+
+.main h1 span {
     color: darkorange;
 }
-.main h3
-{
+
+.main h3 {
     color: white;
     font-size: 25px;
 }
-.main p
-{
+
+.main p {
     color: #ccc;
     margin-top: 20px;
 }
-.main button
-{
+
+.main button {
     width: 200px;
     padding: 10px 15px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;    
+    margin-top: 20px;
     border: 1px solid transparent;
     background-color: darkorange;
     cursor: pointer;
@@ -110,23 +107,23 @@ body
     color: white;
     font-size: 20px;
 }
-.main button i
-{
+
+.main button i {
     transition: all 0.5s ease;
 }
-.main button:hover
-{
+
+.main button:hover {
     transform: translateX(5%);
     color: #ccc;
-}.main button:hover > i
-{
+}
+
+.main button:hover>i {
     transform: translateY(-20%);
 }
 
 
 @media screen and (max-width:900px) {
-    .header ul
-    {
+    .header ul {
         flex-direction: column;
         padding: 20px;
         text-align: center;
@@ -140,30 +137,22 @@ body
         transition: all 1s ease;
         border-right: 1px solid #1f2026;
     }
-    .header ul li
-    {
-        margin-top: 30px;
-    }
-    .header label i
-    {
+
+
+    .header label i {
         display: block;
     }
-    #check:checked + ul
-    {
+
+    #check:checked+ul {
         left: 0px;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .header
-    {
-        padding: 20px;
+@media screen and (max-width:360px) {
+    .header .logo {
+        font-size: 25px;
     }
-    .header .logo
-    {
-        font-size: 20px;
-    }
-    .header label i
+    .header lebel i
     {
         font-size: 20px;
     }
@@ -175,7 +164,31 @@ body
     {
         font-size: 20px;
     }
-
+    .main p span
+    {
+        color: darkorange;
+    }
 }
 
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 20px;
+    }
 
+    .header .logo {
+        font-size: 20px;
+    }
+
+    .header label i {
+        font-size: 20px;
+    }
+
+    .main h1 {
+        font-size: 25px;
+    }
+
+    .main h3 {
+        font-size: 20px;
+    }
+
+}
