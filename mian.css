@@ -208,6 +208,12 @@ body {
         left: 0px;
     }
 }
+@media screen and (max-width:750px) {
+    .skills .description__item
+    {
+        flex-wrap: wrap;
+    }   
+}
 
 @media screen and (max-width:360px) {
     .header .logo {
@@ -256,6 +262,7 @@ body {
     .main h3 {
         font-size: 20px;
     }
-    
-
 }
+
+
+q
